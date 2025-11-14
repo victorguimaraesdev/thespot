@@ -6,7 +6,6 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 60px;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -42,7 +41,7 @@ const NavLink = styled.a`
   font-weight: 500;
 
   &:hover {
-    text-decoration: underline;
+    color: #01175f;
   }
 `;
 
@@ -54,7 +53,7 @@ const Button = styled.button`
   height: 50px;
   font-weight: 700;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 
   @media (max-width: 768px) {
@@ -97,6 +96,7 @@ const MobileMenu = styled.div`
   gap: 20px;
   padding: 20px 0;
   transition: all 0.3s ease;
+  z-index: 99;
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
@@ -122,11 +122,13 @@ export const Header = () => {
           <NavLink href="#">Sobre</NavLink>
           <NavLink href="#">Vantagens</NavLink>
           <NavLink href="#">Segurança</NavLink>
+          <NavLink href="#">Localização</NavLink>
           <NavLink href="#">Contato</NavLink>
         </Nav>
         <Button>Fale Conosco</Button>
 
         <MenuButton onClick={toggleMenu}>
+          <span />
           <span />
           <span />
           <span />
@@ -137,6 +139,7 @@ export const Header = () => {
         <NavLink href="#">Sobre</NavLink>
         <NavLink href="#">Vantagens</NavLink>
         <NavLink href="#">Segurança</NavLink>
+        <NavLink href="#">Localização</NavLink>
         <NavLink href="#">Contato</NavLink>
         <Button>Fale Conosco</Button>
       </MobileMenu>
