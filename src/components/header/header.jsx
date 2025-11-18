@@ -143,11 +143,13 @@ export const Header = () => {
       </Container>
 
       <MobileMenu isOpen={isOpen}>
-        <NavLink href="#">Sobre</NavLink>
-        <NavLink href="#">Vantagens</NavLink>
-        <NavLink href="#">Segurança</NavLink>
-        <NavLink href="#">Localização</NavLink>
-        <NavLink href="#">Contato</NavLink>
+        <NavLink href="#about">Sobre</NavLink>
+        <NavLink href="#vantagem">Vantagens</NavLink>
+        <NavLink href="#seguranca">Segurança</NavLink>
+        <NavLink href="#lazer">Lazer</NavLink>
+        <NavLink href="#gourmet">Gourmet</NavLink>
+        <NavLink href="#localizacao">Localização</NavLink>
+        <NavLink href="#contato">Contato</NavLink>
         <Button>Fale Conosco</Button>
       </MobileMenu>
     </>
