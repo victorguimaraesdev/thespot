@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -115,8 +115,11 @@ export const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const closeMenu = () => setIsOpen(false);
+
   const redirect = () => {
-    window.location.href = "https://www.instagram.com/residencialthespot?igsh=MXZya2tnOTdzM2xzMA%3D%3D";
+    window.location.href =
+      "https://www.instagram.com/residencialthespot?igsh=MXZya2tnOTdzM2xzMA%3D%3D";
   };
 
   return (
@@ -138,19 +141,20 @@ export const Header = () => {
           <span />
           <span />
           <span />
-          <span />
         </MenuButton>
       </Container>
 
+      {/* MENU MOBILE */}
       <MobileMenu isOpen={isOpen}>
-        <NavLink href="#about">Sobre</NavLink>
-        <NavLink href="#vantagem">Vantagens</NavLink>
-        <NavLink href="#seguranca">Segurança</NavLink>
-        <NavLink href="#lazer">Lazer</NavLink>
-        <NavLink href="#gourmet">Gourmet</NavLink>
-        <NavLink href="#localizacao">Localização</NavLink>
-        <NavLink href="#contato">Contato</NavLink>
-        <Button>Fale Conosco</Button>
+        <NavLink href="#about" onClick={closeMenu}>Sobre</NavLink>
+        <NavLink href="#vantagem" onClick={closeMenu}>Vantagens</NavLink>
+        <NavLink href="#seguranca" onClick={closeMenu}>Segurança</NavLink>
+        <NavLink href="#lazer" onClick={closeMenu}>Lazer</NavLink>
+        <NavLink href="#gourmet" onClick={closeMenu}>Gourmet</NavLink>
+        <NavLink href="#localizacao" onClick={closeMenu}>Localização</NavLink>
+        <NavLink href="#contato" onClick={closeMenu}>Contato</NavLink>
+
+        <Button >Fale Conosco</Button>
       </MobileMenu>
     </>
   );
