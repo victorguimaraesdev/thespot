@@ -7,21 +7,6 @@ A página apresenta seções como **Banner**, **About**, **Gourmet**, **Contato*
 
 ---
 
-## 📌 Índice
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Funcionalidades](#funcionalidades)
-- [Layout e Estrutura](#layout-e-estrutura)
-- [Instalação e Execução](#instalação-e-execução)
-- [Como Editar o Favicon (Ícone da Aba)](#como-editar-o-favicon-ícone-da-aba)
-- [Estrutura de Pastas](#estrutura-de-pastas)
-- [Contribuição](#contribuição)
-- [Autor](#autor)
-- [Licença](#licença)
-
----
-
 ## 🧾 Sobre o Projeto
 
 O objetivo do **THE SPOT** é apresentar um layout impactante e profissional, ideal para uso como página institucional, apresentação de marca, divulgação de produtos ou serviços.
